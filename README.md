@@ -1,6 +1,4 @@
-# The Tutorials
-
-## The Letters Tutorial
+# The Letters Tutorial
 
 This tutorial covers the very basics of using https://datadrivenjs.com to add social proofs and inventory recommendations using JavaScript only (no backend required).
 
