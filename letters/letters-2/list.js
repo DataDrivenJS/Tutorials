@@ -67,7 +67,7 @@ function orderByViews (){
 }
 
 function loadLikes (){
-    DD.reader.read('3610a2cd0ee2b49aeed38bde9e06192a/Session_listGroupedDatapointsByFilters/ac1de2b28c80e83697f55ea4c913515a',{}, function(response){
+    DD.reader.read('3610a2cd0ee2b49aeed38bde9e06192a/Session_listGroupedDatapointsByFilters/5514c70d1e8a5abcd5be0e7b628af81e',{}, function(response){
         itemsUl.dataset.likesLoaded = '1';
         var letterLinks = document.querySelectorAll('.items > ul a');
         var lettersIndex = {};
