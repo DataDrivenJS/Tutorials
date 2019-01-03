@@ -52,6 +52,8 @@ document.querySelector('.backBtn').addEventListener('click',function(e){
 var letterID = getLetterID();
 if (letterID){
     setTheMainLetter(letterID);
+    // track views of the letter in the same format as 'liked'
+    DD.tracker.trackMetaEvent('viewed',letterID);
 }else{
     console.warn('No letter ID found in the URL.');
 }

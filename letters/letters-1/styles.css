@@ -243,7 +243,7 @@ h3 {
     margin-left: 40px;
     margin-top: 12px;
 }
-.backBtn {
+.backBtn, .viewBtn {
     background: #000;
     color: white;
     padding: 0 15px;
@@ -252,4 +252,58 @@ h3 {
     line-height: 38px;
     border-radius: 20px;
     display: inline-block;
+}
+
+.viewBtn { 
+    background: #32edad;
+    color: black;
+}
+
+#home {
+    text-align: center;
+}
+#home h1 {
+    font-size: 120px;
+    line-height: 10px;
+    margin-top: 143px;
+}
+#home .items {
+    width: 240px;
+}
+#home .items ul > li {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+}
+#home .items li.white {
+    width: 98px;
+    height: 98px;
+}
+#home .items ul > li a:hover {
+    font-size: 65px;
+}
+#home .items ul > li a {
+    width: 90px;
+    height: 90px;
+    margin: 5px;
+    line-height: 90px
+}
+.top-of-the-list {
+    width: 100%;
+    margin-top: 50px;
+}
+.top-of-the-list .items {
+    width: 200px;
+    margin: 0 auto;
+}
+.top-of-the-list > ul {
+    display: flex;
+}
+.top-of-the-list > ul > li {
+    flex: 1 1 auto;
+}
+.top-of-the-list h2 > small {
+    font-family: 'Merriweather', serif;
+    font-size: 12px;
+    line-height: 12px;
 }

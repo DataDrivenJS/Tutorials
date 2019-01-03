@@ -1,4 +1,3 @@
-
 /*
     retrieves the letterID from URL which will be used to 
     show the letter. It can also be used for tracking.
@@ -9,9 +8,6 @@ function getLetterID(){
     var letterParam = window.location.search.split('letter=');
     if (letterParam[1] && letterParam[1]!=''){
         id = letterParam[1].split('&')[0];
-    }else{
-        console.warn('No letter ID found in the URL. Using a dummy ID instead');
-        id = 'a-green-round-sans-bold-uppercase';
     }
     return id;
 }
@@ -45,7 +41,7 @@ function addLetter( id, itemsList ){
 */
 
 document.querySelector('.backBtn').addEventListener('click',function(e){
-    history.back();
+    window.location.href = './list.html';
     e.preventDefault();
 });
 
@@ -54,6 +50,10 @@ document.querySelector('.backBtn').addEventListener('click',function(e){
 */
 
 var letterID = getLetterID();
-setTheMainLetter(letterID);
+if (letterID){
+    setTheMainLetter(letterID);
+}else{
+    console.warn('No letter ID found in the URL.');
+}
 
 ///////////////////////// !the page is ready, now add some data-driven features below
